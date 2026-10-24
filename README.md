@@ -1,5 +1,3 @@
-# DHCP-Relay-Troubleshooter
-A simple PowerShell diagnostic tool to troubleshoot DHCP Relay Agent configuration, gateway reachability, and APIPA IP issues in multi-subnet enterprise networks.
 # DHCP Relay & Subnet Troubleshooter 🚀
 
 A simple and effective PowerShell tool designed to diagnose DHCP and Relay Agent connectivity issues across routed network subnets.
@@ -21,30 +19,26 @@ A simple and effective PowerShell tool designed to diagnose DHCP and Relay Agent
 ```powershell
 .\DHCP_Relay_Troubleshooter.ps1 -DHCPServerIP 192.168.100.10
 
+==================================================================
+==================================================================
+# ابزار عیب‌یابی شبکه و واسطه آی پی
 
+یک ابزار ساده و کاربردی برای تشخیص مشکلات دریافت آی پی و بررسی ارتباط با واسطه های شبکه در محیط های سازمانی.
 
----
+## قابلیت ها
 
-### 📄 ۲. فایل `README.md` (ترجمه فارسی)
+۱. بررسی سلامت آی پی: تشخیص اینکه آیا سیستم آی پی معتبر گرفته یا روی خطای عدم دریافت آی پی مانده است.
+۲. بررسی ارتباط با دروازه شبکه: تست پینگ و بررسی دسترسی به دروازه پیش فرض یا همان محل واسطه شبکه.
+۳. بررسی ارتباط با سرور اصلی: تست پینگ و بررسی ارتباط بین سیستم و سرور مرکزی دهنده آی پی.
 
-```markdown
-# ابزار عیب‌یابی DHCP Relay و ساب‌نت 🚀
+## نحوه اجرا
 
-یک ابزار ساده و کاربردی با پاورشل برای تشخیص مشکلات دریافت آی‌پی و ارتباط با DHCP Relay Agent در شبکه‌های سازمانی.
+۱. محیط اجرای دستورات را با دسترسی مدیریت باز کنید.
+۲. اسکریپت را اجرا کرده و آدرس سرور اصلی را وارد کنید:
 
----
+اسکریپت.ps1 -آدرس_سرور 192.168.100.10
 
-## 📌 قابلیت‌ها
-* **بررسی سلامت IP:** تشخیص اینکه آیا سیستم آی‌پی معتبر گرفته یا روی آدرس خطای APIPA (`169.254.x.x`) مانده است.
-* **تست ارتباط با گیت‌وی:** بررسی پینگ و دسترسی به گیت‌وی محلی (محل قرارگیری DHCP Relay Agent).
-* **تست ارتباط با سرور DHCP:** بررسی پینگ بین کلاینت و سرور مرکزی DHCP.
+## سازنده
 
----
-
-## 🚀 نحوه اجرا
-
-۱. محیط PowerShell را به صورت Administrator باز کنید.
-۲. اسکریپت را اجرا کرده و آی‌پی سرور DHCP خود را وارد کنید:
-
-```powershell
-.\DHCP_Relay_Troubleshooter.ps1 -DHCPServerIP 192.168.100.10
+توسعه دهنده: کوروش
+گیت هاب: https://github.com/cyrusnet
